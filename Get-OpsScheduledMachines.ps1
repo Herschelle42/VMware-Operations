@@ -7,6 +7,9 @@
   there does not appear to be a display in the UI that makes this easy. This 
   script uses UNSUPPORTED internal API calls. There is no support for this 
   script by VMware or Broadcom Support.
+
+  This script is just a quick and dirty and could do with many enhancements link
+  adding parameters, validation and error checking.
 .NOTES
   Only tested on Aria Operations 8.18.1
 
@@ -135,7 +138,7 @@ $startItem = 0
 Query returns 17,317 Virtual Machines so need to do some more tweaking of the query.
 
 Q: is it picking up old deleted objects like backups?
-A: yes appears so
+A: yes appears so at the customer
 
 #exclude names ending in BACKUP ^(?!.*BACKUP$).*
 &regex=%5E(%3F!.*BACKUP%24).*
